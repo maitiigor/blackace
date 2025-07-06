@@ -1,0 +1,413 @@
+/* Global styles */
+/* Add Vina Sans font */
+@font-face {
+    font-family: 'Vina Sans';
+    src: url('../fonts/VinaSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('../fonts/KaushanScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'nohemi';
+    src: url('../fonts/Nohemi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nohemi';
+    src: url('../fonts/Nohemi-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sora';
+    src: url('../fonts/Sora.ttf') format('truetype');
+}
+
+
+body,
+html {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+    color: #ffff;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.active {
+    color: #0F9D58 !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    color: #121212
+}
+
+
+:root {
+    --primary: #0F9D58;
+    --dark: #031F12;
+    --light-bg: #f2f7fb;
+    --accent: #A0FCCC;
+    --vz-btn-hover-bg: #0F9D58;
+    --vz-btn-hover-bg: #0F9D58;
+
+}
+
+.btn-primary {
+    background-color: #0F9D58;
+    border-color: #0F9D58;
+}
+
+.btn-primary:hover {
+    background-color: #0F9D58;
+    ;
+    border-color: #0F9D58;
+}
+
+.btn-outline-primary:hover {
+    border-color: #0F9D58;
+    background-color: #0F9D58;
+    color: #ffff !important;
+}
+
+.btn-outline-primary {
+    border-color: #0F9D58;
+    color: #0F9D58 !important;
+}
+
+/* Common utility classes */
+
+.rounded-card {
+    border-radius: 16px;
+}
+
+.btn-rounded {
+    border-radius: 16px;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Ensure all content respects boundaries */
+img {
+    max-width: 100%;
+}
+
+
+/* Hero section */
+
+.hero-container {
+    position: relative;
+    overflow: hidden;
+    background-color: #001209;
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-size: 48px;
+    color: white;
+    line-height: 1.2;
+    font-family: 'nohemi', sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 991px) {
+    .hero-title {
+        font-size: 32px;
+    }
+}
+
+.hero-content {
+    padding-left: 7%;
+    padding-right: 70px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.navbar{
+    font-family: 'nohemi', sans-serif;
+    font-size: 400;
+    font-size: 14px;
+}
+
+.btn{
+    font-family: 'sora', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media (max-width: 991px) {
+    .hero-content {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}
+
+.text-primary{
+    color: var(--primary) !important;
+}
+
+.hero-highlight {
+    color: var(--primary);
+}
+
+.hero-description {
+    font-size: 16px;
+    color: #d0d6d6;
+}
+
+@media (max-width: 991px) {
+    .hero-description {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .subscribe {
+        width: 100%;
+    }
+
+    .subscribe>button {
+        width: 100%
+    }
+}
+
+.about-description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2.5;
+    color: #153132;
+}
+
+@media (max-width: 991px) {
+    .about-description {
+        font-size: 16px;
+        line-height: 2.0;
+        text-transform: capitalize;
+    }
+}
+
+.timeline-section {
+    padding-left: 150px;
+    padding-left: 150px
+}
+
+@media (max-width: 991px) {
+    .timeline-section {
+        padding-left: 10px;
+        padding-left: 10px;
+    }
+}
+
+.vl {
+    border-left: 1px solid #6B7280;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+
+/* Feature cards */
+
+.feature-card {
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.feature-card-light {
+    background-color: #DFFEEE;
+}
+
+.feature-card-gradient {
+    background: linear-gradient(135deg, #e6ffd3 0%, #f8fffa 100%);
+}
+
+.feature-title {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'nohemi';
+    color: #031F12;
+}
+
+.form-label{
+    font-family: 'nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.form-control{
+    font-family: 'sora', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.feature-description {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* Section styling */
+
+.section-block {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-weight: 500;
+    font-family: 'nohemi';
+    font-size: 32px;
+    margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* Contact section */
+
+.contact-container {
+    position: relative;
+}
+
+.contact-info-box {
+    background-color: var(--dark);
+    width: 80%;
+    height: 283px;
+    z-index: 1
+}
+
+.edge-box {
+    position: absolute;
+    background-color: #45CB86;
+}
+
+@media (min-width: 991px) {
+    .w-md-30 {
+        width: 30% !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .edge-box {
+        bottom: 0;
+        height: 184px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .edge-box {
+        right: 0;
+        height: 100%;
+        width: 184px;
+    }
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--dark);
+    padding: 80px 0 40px;
+}
+
+.footer-title {
+    color: var(--primary);
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'nohemi', sans-serif;
+    font-weight: 400;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 991px) {
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .section-block {
+        padding: 80px 0;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+}
+
+.how-container{
+    height: 700px; 
+    width: 100%; 
+    overflow: hidden;
+    padding: 10px 0;
+    border-radius: 16px;
+}
+
+@media (max-width: 767px) {
+    .how-container {
+        height: 270px; 
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .section-block {
+        padding: 40px 0;
+    }
+
+    .feature-card {
+        margin-bottom: 20px;
+    }
+
+    .contact-info-box {
+        margin-top: 30px;
+    }
+}
